@@ -3,6 +3,11 @@ import App from './App.vue'
 import router from './router'
 
 Vue.config.productionTip = false
+import VueDirectiveImagePreviewer from 'vue-directive-image-previewer'
+import 'vue-directive-image-previewer/dist/assets/style.css'
+Vue.use(VueDirectiveImagePreviewer,{
+  zIndex:999
+})
 
 new Vue({
   router,

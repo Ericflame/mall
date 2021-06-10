@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <tab-bar>
+    <tab-bar class="tab-bar">
       <tab-bar-item path="/home" activeColor="#391085">
         <img slot="item-icon" src="~assets/img/tabbar/首页.png" alt="" />
         <img
@@ -20,13 +20,13 @@
         <div slot="item-text">分类</div>
       </tab-bar-item>
       <tab-bar-item path="/cart" activeColor="#391085">
-        <img slot="item-icon" src="~assets/img/tabbar/购物车空.png" alt="" />
+        <img slot="item-icon" src="~assets/img/tabbar/资讯.png" alt="" />
         <img
           slot="item-icon-active"
-          src="~assets/img/tabbar/购物车满.png"
+          src="~assets/img/tabbar/资讯-选中.png"
           alt=""
         />
-        <div slot="item-text">购物车</div>
+        <div slot="item-text">画师/资讯</div>
       </tab-bar-item>
       <tab-bar-item path="/profile" activeColor="#391085">
         <img slot="item-icon" src="~assets/img/tabbar/我的.png" alt="" />
@@ -58,4 +58,7 @@ export default {
 };
 </script>
 <style>
+.tab-bar{
+  z-index: 10;
+}
 </style>

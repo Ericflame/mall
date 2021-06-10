@@ -35,7 +35,6 @@ export default {
   },
   methods: {
     itemClick() {
-      console.log("呵呵");
       this.$router.replace(this.path);
     },
   },

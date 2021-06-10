@@ -1,9 +1,7 @@
 <template>
   <div class="feature">
     <div class="feature-item" v-for="item in list" :key="item.id">
-      <a href="item.image">
-        <img :src="item.image" alt="" />
-      </a>
+        <img :src="item.image" v-image-preview alt="" />
     </div>
   </div>
 </template>
@@ -26,7 +24,7 @@ export default {
 </script>
 <style>
 .feature {
-  padding: 10px 0 20px;
+  padding: 10px 0 10px 9px;
   display: flex;
   width: 100%;
   flex-wrap: wrap;
@@ -40,5 +38,11 @@ export default {
 .feature-item img {
   width: 120px;
   height: 90px;
+}
+.vue-directive-image-previewer-img{
+  min-width: 100px;
+  min-height: 100px;
+  transition: all 0ms ease 0ms;
+  z-index: 9999;
 }
 </style>
