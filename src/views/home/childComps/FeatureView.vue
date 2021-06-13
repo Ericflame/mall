@@ -24,11 +24,11 @@ export default {
 </script>
 <style>
 .feature {
-  padding: 10px 0 10px 9px;
+  padding: 10px 5px 10px 7px;
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 .feature-item {
@@ -36,8 +36,8 @@ export default {
   box-sizing: border-box;
 }
 .feature-item img {
-  width: 120px;
-  height: 90px;
+  width: 117px;
+  height: 85px;
 }
 .vue-directive-image-previewer-img{
   min-width: 100px;

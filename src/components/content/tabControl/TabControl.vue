@@ -48,11 +48,11 @@ export default {
 }
 .tab-control-item {
   border: 1px solid white;
-  border-radius: 10px;
+  border-radius: 20px;
   flex: 1;
   background-color: rgb(255, 129, 152);
   box-shadow: 2px 2px 5px #888888;
-  padding: 5px;
+  padding: 7px;
 }
 
 /* .active {
