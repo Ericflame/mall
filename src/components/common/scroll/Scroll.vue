@@ -15,10 +15,10 @@ export default {
       type: Number,
       default: 0,
     },
-    pullUpLoad:{
-      type:Boolean,
-      default:false
-    }
+    pullUpLoad: {
+      type: Boolean,
+      default: false,
+    },
   },
   data() {
     return {
@@ -32,27 +32,27 @@ export default {
       click: true,
       taps: true,
       mouseWheel: true,
-      pullUpLoad:this.pullUpLoad
+      pullUpLoad: this.pullUpLoad,
     });
     //监听滚动的位置
-    this.scroll.on("scroll", position => this.$emit('scroll',position));
+    this.scroll.on("scroll", (position) => this.$emit("scroll", position));
     //监听上拉事件
-    this.scroll.on('pullingUp',() => {
-      this.$emit('pullingUp')
-    })
-    this.scroll.refresh()
+    this.scroll.on("pullingUp", () => {
+      this.$emit("pullingUp");
+    });
   },
   methods: {
     scrollTo(x, y, time = 500) {
-      this.scroll.scrollTo(x, y, time);
+      this.scroll && this.scroll.scrollTo(x, y, time);
     },
     //监听滚动的位置
-    finishPullUp(){
-      this.scroll.finishPullUp()
+    finishPullUp() {
+      this.scroll.finishPullUp();
     },
-    refresh(){
-      this.scroll.refresh
-    }
+    refresh() {
+      this.scroll && this.scroll.refresh();
+      console.log('-----');
+    },
   },
 };
 </script>
